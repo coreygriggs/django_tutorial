@@ -5,7 +5,7 @@ class Question(models.Model):
     pub_date = models.DateTimeField('date published')
 
 
-class Choice(modes.Model):
+class Choice(models.Model):
     question = models.ForeignKey(Question)
     choice_text = modeslCharField(max_length=200)
     votes = models.IntegerField(default=0)
